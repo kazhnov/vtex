@@ -10,7 +10,7 @@ Texture VTEX_LoadPPM(char* path) {
     int max_value;
     Texture texture;
     
-    int8_t c = fgetc(file);
+    uint32_t c = fgetc(file);
     assert(c == 'P');
     c = fgetc(file);
     assert(c == '6');
